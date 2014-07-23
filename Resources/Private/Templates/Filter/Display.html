@@ -1,0 +1,25 @@
+<div class="tx-newsfilter">
+	<form action="{f:uri.page(additionalParams:'{no_cache: 1}')}" method="GET" name="newsfilter">
+		<div class="row form-group">
+			<f:if condition="{settings.controls} % 2">
+				<div class="col-lg-6">
+					<f:form.select name="tx_news_pi1[overwriteDemand][year]" value="{overwriteDemand.year}" options="{years}" class="form-control" additionalAttributes="{onchange: 'document.forms.newsfilter.submit();'}" />
+				</div>
+			</f:if>
+			<f:if condition="{settings.controls} > 1">
+				<f:if condition="{settings.controls} != 5">
+					<f:if condition="{settings.controls} % 4">
+						<div class="col-lg-6">
+							<f:form.select name="tx_news_pi1[overwriteDemand][month]" value="{overwriteDemand.month}" options="{months}" class="form-control" additionalAttributes="{onchange: 'document.forms.newsfilter.submit();'}" />
+						</div>
+					</f:if>
+				</f:if>
+			</f:if>
+		</div>
+		<f:if condition="{settings.controls} > 3">
+			<div>
+				<f:form.select name="tx_news_pi1[overwriteDemand][categories]" value="{overwriteDemand.categories}" options="{categories}" optionLabelField="title" optionValueField="uid" multiple="true" class="form-control" additionalAttributes="{onchange: 'document.forms.newsfilter.submit();'}" />
+			</div>
+		</f:if>
+	</form>
+</div>

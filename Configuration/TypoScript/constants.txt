@@ -1,0 +1,20 @@
+plugin.tx_newsfilter {
+	view {
+		# cat=plugin.tx_newsfilter/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:newsfilter/Resources/Private/Templates/
+		# cat=plugin.tx_newsfilter/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:newsfilter/Resources/Private/Partials/
+		# cat=plugin.tx_newsfilter/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:newsfilter/Resources/Private/Layouts/
+	}
+	settings {
+		initialFilter {
+			# cat=plugin.tx_newsfilter//initialFilter; type=string; label='month' initial filter for News List View
+			month =
+			# cat=plugin.tx_newsfilter//initialFilter; type=string; label='year' initial filter for News List View
+			year =
+			# cat=plugin.tx_newsfilter//initialFilter; typoe=int+; label='categories' initial filter for News List View
+			categories =
+		}
+	}
+}

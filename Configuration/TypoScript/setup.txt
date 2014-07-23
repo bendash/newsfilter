@@ -1,0 +1,15 @@
+
+plugin.tx_newsfilter {
+	view {
+		templateRootPath = {$plugin.tx_newsfilter.view.templateRootPath}
+		partialRootPath = {$plugin.tx_newsfilter.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_newsfilter.view.layoutRootPath}
+	}
+	settings {
+		initialFilter {
+			month = {$plugin.tx_newsfilter.settings.initialFilter.month}
+			year = {$plugin.tx_newsfilter.settings.initialFilter.year}
+			categories = {$plugin.tx_newsfilter.settings.initialFilter.categories}
+		}
+	}
+}

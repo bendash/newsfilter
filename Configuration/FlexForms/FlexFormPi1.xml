@@ -1,0 +1,29 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<ROOT>
+		<type>array</type>
+		<el>
+			<settings.controls>
+				<TCEforms>
+					<label>LLL:EXT:newsfilter/Resources/Private/Language/locallang_be.xlf:flexform_pi1.settings.controls</label>
+					<config>
+						<type>check</type>
+						<items type="array">
+							<numIndex type="array" index="0">
+								<numIndex index="0">LLL:EXT:newsfilter/Resources/Private/Language/locallang_be.xlf:flexform_pi1.settings.controls.yearselect</numIndex>
+							</numIndex>
+							<numIndex type="array" index="1">
+								<numIndex index="0">LLL:EXT:newsfilter/Resources/Private/Language/locallang_be.xlf:flexform_pi1.settings.controls.monthselect</numIndex>
+							</numIndex>
+							<numIndex type="array" index="2">
+								<numIndex index="0">LLL:EXT:newsfilter/Resources/Private/Language/locallang_be.xlf:flexform_pi1.settings.controls.categoryselect</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</settings.controls>
+		</el>
+	</ROOT>
+</T3DataStructure>
