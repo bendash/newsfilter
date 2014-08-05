@@ -1,5 +1,6 @@
 <div class="tx-newsfilter">
 	<form action="{f:uri.page(additionalParams:'{no_cache: 1}')}" method="GET" name="newsfilter">
+		<f:form.hidden name="id" value="{pageId}" />
 		<div class="row form-group">
 			<f:if condition="{settings.controls} % 2">
 				<div class="col-lg-6">

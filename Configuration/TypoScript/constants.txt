@@ -10,9 +10,9 @@ plugin.tx_newsfilter {
 	settings {
 		initialFilter {
 			# cat=plugin.tx_newsfilter//initialFilter; type=string; label='month' initial filter for News List View
-			month =
+			month = now
 			# cat=plugin.tx_newsfilter//initialFilter; type=string; label='year' initial filter for News List View
-			year =
+			year = now
 			# cat=plugin.tx_newsfilter//initialFilter; typoe=int+; label='categories' initial filter for News List View
 			categories =
 		}

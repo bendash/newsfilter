@@ -82,6 +82,7 @@ class FilterController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
 		
 		$this->view->assignMultiple(
 			array(
+				'pageId' => $GLOBALS['TSFE']->id,
 				'years' => $years,
 				'months' => $months,
 				'categories' => $this->categoryRepository->findAll(),
