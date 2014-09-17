@@ -47,7 +47,7 @@ class DemandedRepositoryHook {
 		$initialFilterSettings = $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_newsfilter.']['settings.']['initialFilter.'];
 		
 		// month & year initial filtering for news list
-		if (!$params['demand']->getYear() && !$params['demand']->getMonth()) {
+		if ($initialFilterSettings && !$params['demand']->getYear() && !$params['demand']->getMonth()) {
 			if ($initialFilterSettings['year']) {
 				if ($initialFilterSettings['month']) {
 					$begin = mktime(0, 0, 0, (int)strftime('%m', strtotime($initialFilterSettings['month'])), 1, (int)strftime('%Y', strtotime($initialFilterSettings['year'])));
